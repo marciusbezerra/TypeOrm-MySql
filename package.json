@@ -17,7 +17,8 @@
    },
    "scripts": {
       "build": "rimraf ./build && tsc",
-      "start": "ts-node src/index.ts",
+      "start": "cd build && node app.js && cd ..",
+      "startts": "ts-node src/index.ts",
       "serve": "ts-node src/app.ts"
    }
 }

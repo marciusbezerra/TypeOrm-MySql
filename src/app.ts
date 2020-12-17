@@ -62,7 +62,9 @@ createConnection().then(connection => {
         return res.send(results);
     });
 
+    const port = process.env.PORT || 3000;
+
     // start express server
-    app.listen(process.env.PORT);
+    app.listen(port, () => console.log(`listening in port ${port}...`));
 
 });
