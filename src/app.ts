@@ -64,6 +64,17 @@ createConnection().then(connection => {
 
     const port = process.env.PORT || 3000;
 
+    // heroku login
+    // heroku create
+    // git status
+    // git add .
+    // git commit -m "..."
+    // git push heroku master
+
+    // heroku logs --tail - se quiser ver os logs
+    // heroku open - para abrir a aplicação no browser
+    // heroku run bash - se quiser abrir um terminal
+
     // start express server
     app.listen(port, () => console.log(`listening in port ${port}...`));
 
